@@ -1,0 +1,156 @@
+.footer {
+  background: $hero-footer-section-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-flow: column wrap;
+  gap: 60px;
+  @media screen and (min-width: $tablet) {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+}
+
+.subscribe__label {
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 350px;
+  }
+}
+
+.footer__list-address {
+  width: 231px;
+  margin-top: 20px;
+
+  font-style: normal;
+}
+
+.footer__address-item {
+  margin-bottom: 9px;
+}
+
+.footer__address-item:last-child {
+  margin-bottom: 0;
+}
+
+.logo__studio--footer {
+  color: $second-basic;
+}
+
+.footer__address-link {
+  color: $second-basic;
+  text-decoration: none;
+}
+
+.footer__contact-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footer-contact-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* <!-- присоеденяйтесь --> */
+
+.join {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $second-basic;
+  font-size: 14px;
+}
+
+.list-socseti__item--join {
+  background: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.list-socseti__item--join {
+  .icon-socseti {
+    fill: $second-icon;
+  }
+}
+
+/* <!-- подписаться --> */
+.footer__subscribe {
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+    width: auto;
+  }
+}
+
+.subscribe__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: $second-basic;
+}
+
+.subscribe__form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: $desktop) {
+    flex-flow: row;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+.imput-subscribe {
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: inherit;
+  color: $main-color;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe__button {
+  height: 50px;
+  width: 200px;
+  color: $main-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.subscribe__button:hover {
+  cursor: pointer;
+}
+
+.subscribe__icon-button {
+  fill: $main-color;
+  margin-left: 10px;
+}
